@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>NETFLIX</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" href="imagen/netflix.png" />
+  </head>
+  <body>
+    <header>
+      <div class="net">
+        <nav>
+          <img src="imagen/netflix 123.png" alt="" class="logo" />
+          <ul class="menu">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="fotos.html">FOTOS</a></li>
+            <li><a href="videos.html">VIDEOS</a></li>
+            <li><a href="frases.html">FRASES</a></li>
+            <li><img style="transform: translateX(90px);" class="perfil" onclick="location.href=`name.html`" height="40px" width="40px" src="imagendeinicio/PERFIL.jpg" href="name.html"></img></li>
+          </ul>
+          <button style="background-color: black;border-color: red;" onclick="location.href=`principal.html`">SALIR</button>
+        </nav>
+        <div class="listones">
+          <div class="liston1" ></div>
+          <div class="liston2" ></div>
+          <div class="liston3" ></div>
+        </div>
+        <div class="nav-container">
+          <div class="nav-item">
+            <a onclick="toggleSubMenu(this)">Menú principal</a>
+            <div class="sub-menu">
+              <a href="item1.html">Submenú </a>
+              <a href="item2.html">Submenú </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1 style="color: red; margin-top: 120px;transform: translateX(50px);" class="typewriter">ANTES DE TI</h1>
+           <video controls  loop src="videos-img/antes de ti.mp4" class="pelicula1"></video>
+        </div>
+        <div class="typewriter" style="transform: translateX(490px);margin-top: -370px;">
+          <h1 style="color: red;">CUESTION DE TIEMPO</h1>
+          <p>Ni todos los viajes en el tiempo del mundo pueden</p>
+           <p>hacer que alguien te quiera</p>
+        </div>
+        <div>
+          <img src="imagendeinicio/cuestion de tiempo.jpg" class="peliculas3">
+        </div>
+        <div>
+          <video class="peliculas4" src="video.a/FONDODEINICIO.mp4" controls  loop></video>
+        </div>
+        <script>
+function toggleSubMenu(element) {
+  var subMenu = element.nextElementSibling;
+  if (subMenu.style.display === "flex") {
+    subMenu.style.display = "none";
+  } else {
+    subMenu.style.display = "flex";
+    subMenu.style.flexDirection = "column";
+  }
+}
+
+        </script>
+  </body>
+</html>

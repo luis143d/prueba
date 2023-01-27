@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>NETFLIX</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" href="imagen/netflix.png" />
+  </head>
+  <body>
+    <header>
+      <div class="net">
+        <nav>
+          <img src="imagen/netflix 123.png" alt="" class="logo" />
+          <ul class="menu">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="fotos.html">FOTOS</a></li>
+            <li><a href="videos.html">VIDEOS</a></li>
+            <li><a href="frases.html">FRASES</a></li>
+            <li><img style="transform: translateX(90px);" class="perfil" onclick="location.href=`name.html`" height="40px" width="40px" src="imagendeinicio/PERFIL.jpg" href="name.html"></img></li>
+          </ul>
+          <button style="background-color: black;border-color: red;" onclick="location.href=`principal.html`">SALIR</button>
+        </nav>
+        <div class="listones">
+          <div class="liston1" ></div>
+          <div class="liston2" ></div>
+          <div class="liston3" ></div>
+        </div>
+        <div class="nav-container">
+          <div class="nav-item">
+            </div>
+          </div>
+        </div>
+        <h1 style="color: red; margin-top: -500px;transform: translateX(50px);" class="typewriter">NUESTRA HISTORIA</h1>
+        <div class="typewriter" style="margin-top: 65px;transform: translateX(50px);">
+           <h1 style="color: red;">25/01/2023</h1>
+           <p style="margin-top: 30px;">Hay muchas formas de quererse, ¿sabes? Pero la suya  </p>
+            <p>era... total. Un amor puro, increíble, alucinante.  </p> 
+            <p> Un amor especial como hay pocos.</p>
+            <p>por una vez.</p>
+        </div>
+        <div class="typewriter" style="transform: translateX(490px);margin-top: -140px;">
+          <h1 style="color: red;">DIARIO DE UNA PASION</h1>
+        </div>
+        <div>
+          <img src="videos-img/diario d pasion.jpg" class="peliculas3">
+        </div>
+        <div>
+          <video class="peliculas4" src="reproduccion-img-vd/reproduccion1.mp4" controls autoplay loop></video>
+        </div>
+        <script>
+function toggleSubMenu(element) {
+  var subMenu = element.nextElementSibling;
+  if (subMenu.style.display === "flex") {
+    subMenu.style.display = "none";
+  } else {
+    subMenu.style.display = "flex";
+    subMenu.style.flexDirection = "column";
+  }
+}
+
+        </script>
+  </body>
+</html>
